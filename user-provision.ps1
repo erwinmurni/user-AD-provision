@@ -1,4 +1,6 @@
 #To Add user into Azure Group and assign O365 license
+#Create C:\Temp\Group.txt file with group name that you want to assign user into
+#Change the O365 license with your company O365 subscription, used Get-MsolAccountSku
 
 Write-Host "Please add group name in C:\Temp\Group.txt file before proceed" -ForegroundColor Yellow
 $user=read-host 'Enter user Display Name (First and Last Name) to add to group'
